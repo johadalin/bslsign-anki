@@ -189,11 +189,15 @@ def read_csv(path):
     return notes
 
 
+def escape_spaces(string):
+    return string.replace(" ","-")
+
+
 def add_signs(signs, tags, output):
     """For a list of signs, generate CSV output word list"""
     notes = []
     for sign in signs:
-        notes += get_definitions("https://www.signbsl.com/sign/" + sign, tags)
+        notes += get_definitions("https://www.signbsl.com/sign/" + escape_spaces(sign), tags)
     write_csv(output, notes)
 
 #word_list()
