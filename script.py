@@ -1,3 +1,4 @@
+import argparse
 from pathlib import Path
 from os import system
 from os.path import exists
@@ -8,7 +9,7 @@ from bs4 import BeautifulSoup
 
 CSV_PATH = "biglist.csv"
 #ANKI_MEDIA = ".local/share/Anki2/User 1/collection.media/"
-ANKI_MEDIA = "bsl-gcse/testmedia/"
+ANKI_MEDIA = "bsl-gcse/media/"
 
 
 class Note:
@@ -65,8 +66,7 @@ def get_definitions(url, tags):
     headings = [page.find("h1")] + page.find_all("h2")
     #print(f"URL: {url} found headings h1 {page.find('h1')} and h2 {page.find_all('h2')}")
     if not page.find_all(itemprop="video"):
-        print(f"No video available for url: {url}")
-        return notes
+        raise LookupError(f"No video found on page {url}")
     video_count = len(page.find_all(itemprop='video'))
     print(f"Findall videoprop = {video_count}")
     for heading in headings:
@@ -149,11 +149,11 @@ def write_csv(filename, notes):
         file.writelines([str(note) + "\n" for note in notes])
 
 
-def convert_video(url):
+def convert_video(url, dest):
     """Download and ffmpeg convert videos to save file space in Anki"""
     temp = Path("/tmp/")
     filename = video_filename(url)
-    dest = Path.home() / Path(ANKI_MEDIA)
+    #dest = Path.home() / Path(ANKI_MEDIA)
     if exists(dest / filename):
         #print("Already converted", dest / filename)
         return
@@ -166,11 +166,13 @@ def convert_video(url):
     system(command)
 
 
-def download_videos(csv_path):
+def download_videos(csv_path, dest_dir):
     """Read notes from CSV, and call through to download/convert the videos"""
     notes = read_csv(csv_path)
+    dest = Path.home() / Path(dest_dir)
+    dest.mkdir(exist_ok=True, parents=True)
     for note in notes:
-        convert_video(note.video_url)
+        convert_video(note.video_url, dest)
 
 
 def read_csv(path):
@@ -196,13 +198,26 @@ def escape_spaces(string):
 def add_signs(signs, tags, output):
     """For a list of signs, generate CSV output word list"""
     notes = []
+    errors = []
     for sign in signs:
-        notes += get_definitions("https://www.signbsl.com/sign/" + escape_spaces(sign), tags)
+        try:
+            note = get_definitions("https://www.signbsl.com/sign/" + escape_spaces(sign), tags)
+            notes += note
+        except LookupError:
+            print(f"No video found for sign {sign}. Adding to error list")
+            errors.append(sign)
     write_csv(output, notes)
+    return errors
 
-#word_list()
-word_list = []
-with open('wordlist.txt','r') as f:
-    word_list.extend(line.strip('\n') for line in f.readlines())
-add_signs(word_list, [], 'testout.csv')
-download_videos('testout.csv')
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-f', '--filename', required=True)
+    args = parser.parse_args()
+
+    word_list = []
+    print(f"Parsing file {args.filename}")
+    with open(args.filename,'r') as f:
+        word_list.extend(line.strip('\n') for line in f.readlines())
+    errors = add_signs(word_list, [], 'testout.csv')
+    download_videos('testout.csv', ANKI_MEDIA + args.filename)
+    print(f"Videos for the following signs were not found:\n{errors}")
