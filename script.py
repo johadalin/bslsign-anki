@@ -10,6 +10,7 @@ from bs4 import BeautifulSoup
 CSV_PATH = "biglist.csv"
 #ANKI_MEDIA = ".local/share/Anki2/User 1/collection.media/"
 ANKI_MEDIA = "bsl-gcse/media/"
+ANKI_CSV = "bsl-gcse/csv/"
 
 
 class Note:
@@ -213,11 +214,14 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-f', '--filename', required=True)
     args = parser.parse_args()
+    csv_path = Path.home() / Path(ANKI_CSV)
+    csv_path.mkdir(exist_ok=True, parents=True)
+    csv_file = csv_path / Path(args.filename + '.csv')
 
     word_list = []
     print(f"Parsing file {args.filename}")
     with open(args.filename,'r') as f:
         word_list.extend(line.strip('\n') for line in f.readlines())
-    errors = add_signs(word_list, [], 'testout.csv')
-    download_videos('testout.csv', ANKI_MEDIA + args.filename)
+    errors = add_signs(word_list, [], csv_file)
+    download_videos(csv_file, ANKI_MEDIA + args.filename)
     print(f"Videos for the following signs were not found:\n{errors}")
