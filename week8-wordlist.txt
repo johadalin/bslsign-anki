@@ -1,0 +1,65 @@
+busy
+size
+shape
+nationality*
+bald
+curly
+race
+freckle
+piercing
+earring
+lipstick*
+makeup
+eyeshadow
+mascara
+tattoo
+kind
+guess
+guess who*
+find
+team
+win
+right
+wrong
+opportunity
+aim
+think
+do
+hat
+animals
+pets
+pick
+rabbit
+goat
+pig
+elephant
+dog
+cat**
+bird
+jellyfish
+panda
+red panda*
+fish
+mouse
+sheep
+fox
+owl
+bear
+polar bear
+parrot
+funny
+yoga
+which one*
+which
+cute
+zoo
+smart
+doesn't matter*
+describe
+try
+horse
+one more time*
+hamster
+dream
+sheepdog
+dirty
