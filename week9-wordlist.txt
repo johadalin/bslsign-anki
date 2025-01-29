@@ -1,0 +1,54 @@
+final
+italy
+norway
+snail
+behave
+behaviour
+facial expression
+breathing*
+breathe
+christmas eve
+boxing day*
+pig**
+test
+video
+story
+table
+exam
+topic
+good luck
+section
+single
+um*
+err*
+beautiful
+blind
+tokyo*
+feedback
+lovely
+food
+drink
+hobby
+grammatical rule
+hierarchical database
+enumeration*
+topographical*
+classifier**
+after
+excited
+holiday
+whale
+minus
+can
+can't
+linguistics
+detail
+proud
+complete
+before
+snake**
+tarantula*
+spider
+cougar*
+fox**
+owl**
