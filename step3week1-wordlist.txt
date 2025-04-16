@@ -1,0 +1,57 @@
+form
+*forms
+lexicon
+vocabulary
+not enough
+enough
+*just
+**just sign
+**all week
+curry
+**musical
+*plan
+ice hockey
+*final
+fantasy
+**final fantasy
+mean
+meaning
+research
+*linguistics
+statistics
+lecture
+lecturer
+teach
+*teacher
+**algebra
+study
+student
+communicator
+manager
+management
+event
+AI
+ethics
+editor
+cleaner
+cleaning
+**zookeeper
+primary
+primary school
+fact
+*last
+*pink
+durham
+way
+hierarchy
+**hierarchical
+wavelength
+clear
+draw
+job
+*interesting
+**wisely
+luck
+software
+*clean
+*zoo

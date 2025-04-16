@@ -225,3 +225,5 @@ if __name__ == '__main__':
     errors = add_signs(word_list, [], csv_file)
     download_videos(csv_file, ANKI_MEDIA + args.filename)
     print(f"Videos for the following signs were not found:\n{errors}")
+    non_starred_errors = [word for word in errors if '*' not in word]
+    print(f"Non starred errors:\n{non_starred_errors}")
