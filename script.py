@@ -21,7 +21,8 @@ fileHandler.setFormatter(logFileFormatter)
 consoleHandler = logging.StreamHandler()
 consoleHandler.setFormatter(logFileFormatter)
 
-logging.basicConfig(level=logging.DEBUG,
+#logging.basicConfig(level=logging.DEBUG,
+logging.basicConfig(level=logging.INFO,
                     handlers=[
                         fileHandler,
                         consoleHandler
@@ -29,6 +30,7 @@ logging.basicConfig(level=logging.DEBUG,
                     )
 
 logger = logging.getLogger(__name__)
+missing_titles = []
 
 class Note:
     def __init__(self, *args):
@@ -115,6 +117,7 @@ def get_definitions(url, tags):
         else:
             logger.error("No video title found at url {video_url}. Using headword {headword}")
             video_title = headword
+            missing_titles.append(url)
         logger.debug(f"video content url: {video_url}. title: {video_title}")
         notes.append(
             Note([headword, definition, example, video_url, video_title, url, str(video_count), tags])
@@ -251,3 +254,5 @@ if __name__ == '__main__':
     logger.warning(f"Videos for the following signs were not found:\n{errors}")
     non_starred_errors = [word for word in errors if '*' not in word]
     logger.warning(f"Non starred errors:\n{non_starred_errors}")
+    if missing_titles:
+        logger.warning(f"Missing title errors:\n{missing_titles}")
