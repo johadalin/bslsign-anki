@@ -1,0 +1,70 @@
+acting
+actor
+*stairs
+*cousin
+teenager
+**paperwork
+admin
+often
+happen
+frequent
+**fluffy
+**puffy
+rare
+neighbour
+fight
+*primary school
+*primary
+secondary school
+**secondary
+head teacher
+*teacher
+*student
+*study
+blackboard
+whiteboard
+desk
+*chair
+*history
+*maths
+science
+physics
+chemistry
+**biology
+**zoology
+*art
+**P.E.
+physical education
+*sports
+promise
+*interesting
+tourism
+accent
+*responsibility
+*good
+*better
+best
+bad
+*worse
+worst
+save
+see
+*active
+inactive
+concept
+word
+**rave
+teddy bear
+bee
+talk
+chat
+*cleaner
+*religion
+geography
+king
+**king charles
+**prince charles
+*sometimes
+die
+dead
+germany
