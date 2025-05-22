@@ -1,0 +1,90 @@
+*learn
+class
+*castle
+*board game
+album
+release
+doctor
+swimming pool
+pool
+swim
+presentation
+interest
+supervisor
+**lexeme
+*lexicon
+*hotel
+plumber
+farm
+farmer
+boss
+*manager
+*office
+*printer
+police
+fireman
+salary
+secretary
+**face time
+postman
+nurse
+**window cleaner
+*cleaner
+carpenter
+builder
+electrician
+baby sitter
+*chef
+dentist
+soldier
+army
+*waiter
+funfair
+*stress
+*stressful
+campaigning
+**politician
+politics
+**political
+**fundraising
+**fringe
+sell
+ticket
+employer
+**employee
+self employed
+employed full time
+employed part time
+unemployed
+employed temporary
+self employed with employees
+self employed without employees
+Currently you are employed as what
+How long have you been employed with your current employer
+hearing
+interpreter
+government
+**maple
+**maple syrup
+**syrup
+interview
+*can
+*can't
+psychology
+responsibility
+*hierarchy
+contract
+town
+*aunt
+*uncle
+*nephew
+niece
+**smoothie
+*colleague
+dandelion
+unemployed
+retire
+retired
+photocopier
+river
+skill
