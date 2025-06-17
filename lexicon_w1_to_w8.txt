@@ -9,28 +9,24 @@ last
 pink
 durham
 difficult
-
 learn
 class
 castle
 board game
 album
 release
-doctor
 contract
 bus
 responsibility
 can
 can't
 facetime
-politician
 stress
 city
 town
 sell
 exam
 fringe
-
 good
 better
 best
@@ -45,7 +41,6 @@ how often?
 often
 happens
 interesting
-
 neighbourhood
 famous
 witch
@@ -59,8 +54,7 @@ pain
 little rain
 rain
 heavy rain
-
-Interview
+interview
 busy
 land
 lord
@@ -73,12 +67,11 @@ unit
 philosophy
 private school
 ToD
-Teacher of the Deaf
-Peripatetic
-Dementia
-Hate
-
-Music
+teacher of the Deaf
+peripatetic
+dementia
+hate
+music
 enjoy
 experiment
 usually
@@ -90,11 +83,11 @@ trick
 memory
 Gallaudet
 always
-Never
-Last week
-This week
+never
+last week
+this week
 next week
-Sauna
+sauna
 interpreter
 undertaker
 vicar
@@ -106,21 +99,17 @@ tent
 reunion
 most
 fight
-
-Worth it
+worth it
 worth
-cousin
 galaxy
 cheat
 decoration
 stay
-portugal
 pound
 euro
 dollar
 health
 rugby
-
 doctor
 nurse
 police
@@ -131,9 +120,9 @@ carpenter
 secretary
 builder
 electrician
-babysitter
 plumber
-chef farmer
+chef
+farmer
 dentist
 waiter
 soldier
