@@ -1,14 +1,17 @@
-feelings
+feeling
+feel
+feel feeling
 hay
-hayfever
+**hayfever
+hay barn
 fever
 *full
 tin
 mine
-pickaxe
+**pickaxe
 axe
 galaxy
-Worth it
+**Worth it
 worth
 *cousin
 *cheat
@@ -28,7 +31,7 @@ chopsticks
 happy
 *excited
 surprise
-embarassed
+embarrassed
 ill
 sick
 *love
@@ -44,9 +47,16 @@ afraid
 *hate
 *worried
 diamond
-siren
+**siren
+ambulance
 traffic light
-uplight
+**uplight
 headlights
-head lamp
 *lamp
+difficult
+happens
+heavy rain
+**little rain
+drizzle
+how often?
+rain

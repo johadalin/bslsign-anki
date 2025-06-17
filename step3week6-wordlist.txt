@@ -1,38 +1,41 @@
-relatable
+**relatable
 relate
 lord
 land
-landlord
+**landlord
 rent
 *interview
 *busy
 *physics
-on and off
-off and on
+**on and off
+**off and on
 design
 ruin
-ruined
+**ruined
 domain
 specific
 accountant
 account
 accounts
 college
-remaining
-ToD
-Teacher of the deaf
+**remaining
+remainder
+**ToD
+**Teacher of the deaf
 wolverhampton
-peripatetic
+**peripatetic
 unit
-undergraduate
+**undergraduate
 graduate
 postgraduate
+postgraduate degree
 philosophy
 gender
 *ethics
-overlap
+**overlap
 *australia
-supportive
+**supportive
+support
 queer
 pride
 chance
@@ -46,7 +49,8 @@ degree
 heavy
 *undertaker
 market
-festival
+**festival
+Leeds festival
 special
 wool
 one more
@@ -54,18 +58,18 @@ two more
 *more
 natural
 *science
-natural science
-one off
+**natural science
+**one off
 *bridge
 mexico
-musselburgh
+**musselburgh
 mainstream
 implant
 cochlear implant
-therapist
+**therapist
 private
 dementia
-stat
+**stat
 Music
 *enjoy
 *experiment
@@ -80,7 +84,7 @@ babysitter
 *always
 Never
 Last week
-This week
+**This week
 *next week
 Sauna
 *interpreter

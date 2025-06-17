@@ -22,7 +22,7 @@ def check_file_for_duplicates(filename):
     else:
         return 0
 
-def check_other_txt_for_duplicates(reference_file):
+def check_other_txt_for_duplicates(reference_file, show_non_duplicates):
     # Read words from the reference file
     with open(reference_file, 'r', encoding='utf-8') as f:
         reference_words = set(word.strip() for word in f if word.strip())
@@ -50,8 +50,14 @@ def check_other_txt_for_duplicates(reference_file):
             print(f"Could not read {filename}: {e}")
 
     # Filter out words that were not duplicated
+    all_words = {word: files for word, files in duplicates.items()}
     duplicates = {word: files for word, files in duplicates.items() if files}
+    NOduplicates = {word: files for word, files in all_words.items() if len(files)==0}
     pprint(duplicates)
+    print(f"{len(duplicates)} duplicates found")
+    if show_non_duplicates:
+        pprint(NOduplicates)
+        print(f"{len(NOduplicates)} non-duplicates found")
     return duplicates
 
 
@@ -59,7 +65,8 @@ def check_other_txt_for_duplicates(reference_file):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-f', '--filename', required=True)
+    parser.add_argument('-n', '--show-non-duplicates', nargs="?", required=False, default=False, const=True)
     args = parser.parse_args()
     if check_file_for_duplicates(args.filename):
         print(f"ERROR: duplicate entry in file {args.filename}")
-    check_other_txt_for_duplicates(args.filename)
+    check_other_txt_for_duplicates(args.filename, args.show_non_duplicates)
