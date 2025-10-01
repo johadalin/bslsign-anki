@@ -253,6 +253,6 @@ if __name__ == '__main__':
     download_videos(csv_file, ANKI_MEDIA + args.filename)
     logger.warning(f"Videos for the following signs were not found:\n{errors}")
     non_starred_errors = [word for word in errors if '*' not in word]
-    logger.warning(f"Non starred errors:\n{non_starred_errors}")
+    logger.warning(f"Non starred errors:\n{non_starred_errors}\nMark one star * for duplicates, two stars ** for not present on signbsl")
     if missing_titles:
         logger.warning(f"Missing title errors:\n{missing_titles}")
