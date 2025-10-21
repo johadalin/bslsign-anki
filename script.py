@@ -219,7 +219,7 @@ def read_csv(path):
 
 
 def escape_spaces(string):
-    return string.replace(" ","-")
+    return string.replace(" ","-").replace("'","")
 
 
 def add_signs(signs, tags, output):
