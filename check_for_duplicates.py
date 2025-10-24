@@ -30,7 +30,7 @@ def check_other_txt_for_duplicates(reference_file, show_non_duplicates):
     # Get the directory and list of files
     directory = os.path.dirname(os.path.abspath(reference_file))
     all_files = [f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f))]
-    all_wordlist_files = [f for f in all_files if 'wordlist' in f]
+    all_wordlist_files = [f for f in all_files if 'step' in f]
 
     # Prepare results
     duplicates = {word: [] for word in reference_words}
