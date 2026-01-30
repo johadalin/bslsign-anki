@@ -70,3 +70,4 @@ if __name__ == '__main__':
     if check_file_for_duplicates(args.filename):
         print(f"ERROR: duplicate entry in file {args.filename}")
     check_other_txt_for_duplicates(args.filename, args.show_non_duplicates)
+    print(f"Mark one star * for duplicates")

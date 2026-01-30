@@ -1,0 +1,72 @@
+turtle
+tortoise
+service station
+service
+talk
+say
+gossip
+*home
+room
+object
+furniture
+living room
+sofa
+chair
+table
+fireplace
+picture
+lamp
+rug
+kitchen
+sink
+tap
+fridge
+freezer
+kettle
+cupboard
+chimney
+window
+transgender
+garage
+council
+practice
+training
+*if
+need
+*cinema
+collection
+collect
+*metal
+group
+*culture
+door
+*book
+tv
+pillow
+cushion
+clock
+microwave
+oven
+hob
+toaster
+**tea towel
+bed room
+bed
+mirror
+**lipstick
+wardrobe
+duvet
+blanket
+**bedside table
+fence
+gate
+next to
+above
+below
+will
+roof
+chimney
+giraffe
+*zebra
+gorilla
+monkey
