@@ -1,0 +1,44 @@
+resources
+draft
+*interview
+should
+*try
+*uncle
+*aunt
+*nephew
+*niece
+partner
+*brother
+official
+complaint
+**grieving
+grief
+interpreter
+*leather
+rugby
+**brunch
+**consultancy
+consultant
+essay
+kind
+regulation
+*safe
+**audio processing disorder
+audio
+**processing
+disorder
+way
+form
+greedy
+king
+queen
+notebook
+notes
+**my bad
+**my fault
+**hot tub
+cool
+hospital
+**feeling
+**opinion
+holiday
